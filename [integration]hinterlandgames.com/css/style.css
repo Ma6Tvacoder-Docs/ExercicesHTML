@@ -3,3 +3,11 @@ Test de branchement du fichier CSS
 body{
   background-color: red;
 }*/
+
+#consignes{
+  position: absolute;
+  top: 35vh;
+  right: 38vw;
+  font-family: sans-serif;
+  font-size: 3vw;
+}
