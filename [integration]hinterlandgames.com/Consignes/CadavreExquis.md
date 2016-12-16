@@ -3,7 +3,7 @@
 Hinterland Games est une société de jeux vidéo qui s'est spécialisé dans les jeux de survie en vue à la première personne. Un soin particulier à été apporté à la direction artistique, ouvrez bien vos mirette! *The Long Dark* a reçus de nombreux prix dans differents festivals.
 Nous allons aujourd'hui travailler sur l'integration de leur site qui est un bon condencés des dernieres technologies à connaitre en intégration front.
 
-Vous trouverez le rendus final [ici](http://hinterlandgames.com/)
+Vous trouverez le rendus final [ici](http://hinterlandgames.com/) et une maquette se trouve dans vos fichiers.
 
 ###cadavre exquis
 
