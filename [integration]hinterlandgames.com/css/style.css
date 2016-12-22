@@ -1,13 +1,56 @@
-/*
-Test de branchement du fichier CSS
-body{
-  background-color: red;
-}*/
-
-#consignes{
-  position: absolute;
-  top: 35vh;
-  right: 38vw;
-  font-family: sans-serif;
-  font-size: 3vw;
+/*-----FONT-----*/
+@font-face {
+    font-family: proximaNova;
+    src: url(../elements/fonts/ProximaNova-Bold-webfont.woff);
+    font-weight: 700;
+}
+@font-face {
+    font-family: proximaNova;
+    src: url(../elements/fonts/ProximaNova-Reg-webfont.woff);
+    font-weight: 500;
+}
+@font-face {
+    font-family: proximaNova;
+    src: url(../elements/fonts/ProximaNova-Light-webfont.woff);
+    font-weight: 300;
+}
+/*retouche de classes bootstrap*/
+.container-fluid{
+  padding: 0;
+}
+/*Generation de Classes Orienté Objet*/
+.titleLink-sm, .titleLink-sm a{
+  font-size: 55px;
+  font-family:proximaNova;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.higthLink,.higthLink a{
+  font-size: 70px;
+  text-transform: uppercase;
+  font-family:proximaNova;
+  font-weight: 500;
+}
+.textC{
+  text-align: center;
+}
+.borderSide{
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+/*HeaderStyle Spec*/
+.menu > ul > li{
+  border-bottom: 1px solid grey;
+}
+.menu img{
+  padding: 26px 10px;
+}
+.menu .higthLink{
+  padding: 29px 0;
+}
+.menu .higthLink i:before{
+  margin-left: 28px;
+}
+.colorOrange{
+  color: #c52b1c;
 }
