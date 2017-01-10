@@ -1,24 +1,27 @@
 /*-----FONT-----*/
+/*La media query font-face permet de charger des typo préalablement telechargé.
+On definis son nom, le liens vers la typo et la taille concerné --weight. */
 @font-face {
-    font-family: proximaNova;
-    src: url(../elements/fonts/ProximaNova-Bold-webfont.woff);
-    font-weight: 700;
+  font-family: proximaNova;
+  src: url(../elements/fonts/ProximaNova-Bold-webfont.woff);
+  font-weight: 700;
 }
 @font-face {
-    font-family: proximaNova;
-    src: url(../elements/fonts/ProximaNova-Reg-webfont.woff);
-    font-weight: 500;
+  font-family: proximaNova;
+  src: url(../elements/fonts/ProximaNova-Reg-webfont.woff);
+  font-weight: 500;
 }
 @font-face {
-    font-family: proximaNova;
-    src: url(../elements/fonts/ProximaNova-Light-webfont.woff);
-    font-weight: 300;
+  font-family: proximaNova;
+  src: url(../elements/fonts/ProximaNova-Light-webfont.woff);
+  font-weight: 300;
 }
+
 /*retouche de classes bootstrap*/
 .container-fluid{
   padding: 0;
 }
-/*Generation de Classes Orienté Objet*/
+/*Generation de Classes Perso Orienté Objet*/
 .titleLink-sm, .titleLink-sm a{
   font-size: 45px;
   font-family:proximaNova;
