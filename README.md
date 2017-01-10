@@ -6,4 +6,4 @@ HTML signifie HyperText Markup Language, *langage de balisage d'hypertexte* en f
 
 ### Auteurs et Contributeurs
 
-Adrien Centonze --> [adricen](https://github.com/adricen "profile Git")
+[@adricen](https://github.com/adricen "profile Git")
