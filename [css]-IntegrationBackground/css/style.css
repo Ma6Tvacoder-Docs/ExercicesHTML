@@ -1,0 +1,35 @@
+#section01{
+  height: 200px;
+  width: 100%;
+}
+.background
+{
+    height: 500px;
+    width:200%;
+    position: absolute;
+    left: -63%;
+    overflow: hidden;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+#section02{
+  display: none;
+}
+.background:before{
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background: url(http://www.hammondfarms.com/wp-content/uploads/2015/04/beach-sand.jpeg) 0 0 repeat;
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+}
