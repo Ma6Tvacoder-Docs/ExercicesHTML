@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Biographie de Darth Vader</title>
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amiko" rel="stylesheet">
+  </head>
+  <body>
+    <style media="screen">
+      .container{
+        max-width:1000px;
+        margin: auto;
+      }
+      body{
+        background: url('https://s-media-cache-ak0.pinimg.com/originals/f6/69/30/f669303f3d100975d558b5ce7ef88052.jpg');
+        background-size: cover;
+        /*font-family: 'Russo One', sans-serif;*/
+        font-family: 'Amiko', sans-serif;
+        padding-bottom: 150px;
+        color: white;
+        text-align: justify;
+        word-wrap: break-word;
+      }
+      h1{
+        text-align: center;
+        font-family: 'Russo One', sans-serif;
+        text-transform: uppercase;
+      }
+      body section:first-of-type p{
+        font-size: 25px;
+      }
+      span{
+        font-weight: bold;
+      }
+      #galerie img{
+        margin: auto;
+        position: relative;
+        width: 95%;
+        bottom: 31%;
+      }
+      #presentation img{
+        width: 100%;
+      }
+      #presentation div{
+        width: 40%;
+        float: left;
+        height: 394px;
+        overflow-y:hidden;
+        margin-right: 15px;
+        margin-bottom:5px;
+      }
+      .modifImg{
+        width: 33%;
+        display: inline-block;
+        height: 250px;
+        overflow: hidden;
+
+      }
+      .modifText{
+        color: orange;
+      }
+    </style>
+    <header class="container">
+      <h1 class="modifText">Biographie de Darth Vader</h1>
+    </header>
+    <section  id="presentation" class="container">
+      <div class="">
+        <img src="img/profil.jpg" alt="image de profil de Darth Vader">
+      </div>
+      <p><span class="modifText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+    <section id="galerie" class="container">
+      <div class="modifImg">
+        <img src="img/profil01.jpg" alt="image Darth01">
+      </div>
+      <div class="modifImg">
+        <img src="img/profil02.jpg" alt="image Darth02" >
+      </div>
+      <div class="modifImg">
+        <img src="img/profil03.jpg" alt="image Darth03">
+      </div>
+    </section>
+  </body>
+</html>
