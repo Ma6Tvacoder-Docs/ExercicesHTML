@@ -52,38 +52,64 @@
         padding: 5%;
         background: rgba(255, 255, 255, 0.5);
       }
+      span{
+        display: none;
+      }
+      /*Enlever les commentaires pour voir apparaitres les proprietés display*/
+      /* loazhjeoazejdejazkejkaz */
+      /*span{
+        display: block;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      #bloc-01 .texte, #bloc-01 .profile{
+        display: block;
+      }
+      #bloc-01.ligne,#bloc-02.ligne{
+        height: auto;
+      }
+      #bloc-02 .texte, #bloc-02 .profile{
+        display: inline;
+      }
+      #bloc-02.ligne{
+        height: auto;
+      }*/
+
     </style>
     <header>
       <h1>Forum Vodoo</h1>
     </header>
+
+    <!-- section de l'affichage principale -->
+
     <section>
-      <div class="ligne">
+      <div id="bloc-01" class="ligne">
         <div class="profile">
           <img src="img/chaman.jpg" alt="chaman">
         </div>
         <div class="texte">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <p><span>display : block;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
         </div>
       </div>
-      <div class="ligne demoniste">
+      <div id="bloc-02" class="ligne demoniste">
         <div class="texte">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <p><span>display : inline;</span>Lorem <strong>ipsum dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
         </div>
         <div class="profile">
           <img src="img/demoniste.jpg" alt="demoniste">
         </div>
       </div>
-      <div class="ligne">
+      <div id="bloque-02" class="ligne">
         <div class="profile">
           <img src="img/chaman.jpg" alt="chaman">
         </div>
         <div class="texte">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <p><span>display : inline-block;</span>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <b>labore et dolore</b> magna aliqua. Ut enim ad minim veniam, quis nostrud <em>exercitation ullamco</em> laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>
       <div class="ligne demoniste">
         <div class="texte couleurRouge">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <p><span>display : inline-block;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
         </div>
         <div class="profile demoniste">
           <img src="img/demoniste.jpg" alt="demoniste">
