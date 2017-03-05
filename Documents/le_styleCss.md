@@ -1,19 +1,68 @@
 La feuille de style css
+La feuille de style css
 ---
 
 Appelé feuille de style en cascade, elle permet la mise en forme des pages **Html**.
 
 ---
 
+### [**I. Ecrire du style `CSS`**](#ecrire)
+
+1. ##### [En attribut](#att)
+* ##### [Dans une balise `<style>`](#balise)
+* ##### [Dans une feuiller de style `CSS`](#style)
+
+### [**II. Comment ça marche ?**](#comment)
+
+
+#### [a. <u>Cibler un element](#target)
+1. ##### [Les balises](#balise)
+2. ##### [Un chemin de selection](#path)
+
+#### [b. <u>Les class](#class)
+
+1. ##### [Le nommage des class](#nommage)
+* ##### [creer une structure de donnée](#classStructure)
+
+#### [c. <u>Les Id](#id)
+1. ##### [Definition](#def)
+2. ##### [ID vs Class](#vs)
+3. ##### [Ecrire une Id en Html](#html)
+4. ##### [Utiliser une Id en Css](#use)
+
+#### [Combiner Id et class](#comb)
+#### [Ajouter plusieurs class](#add)
+
+### [**III. Quelques selecteurs**](#quel)
+#### [a. <u>Le positionnement](#posi)
+##### [1. *Float*](#float)
+##### [2. *display*](#display)
+
+
+* ###### [i. *block*](#bloc)
+* ###### [ii. *inline*](#inline)
+* ###### [iii. *inline-block*](#Ibloc)
+
+
+##### [3. *position*](#position)
+
+* ###### [i. *relative*](#relative)
+
+
+
+---
 <a name="ecrire"/>
 ## I. Ecrire du style  :sunglasses:
 
 On peut l'insérer dans la page html sous 3 formes :
 
+<a name="att"/>
 1. En attribut :
 ```html
 <div style=" width: 100%; " ></div>
 ```
+
+<a name="balise"/>
 2. Encadré dans une balise `style` en haut du `body`:
 
 ```html
@@ -28,6 +77,7 @@ On peut l'insérer dans la page html sous 3 formes :
 
 ```
 
+<a name="style"/>
 3. Dans une feuille de style exterieur avec la balise `link` :
 ```html
 <link rel="stylesheet" href="css/style.css">
@@ -121,7 +171,7 @@ header .modifie, .modifie div {
 ---
 
 <a name="nommage"/>
-#### <u>Le nommage des class :
+#### 1. <u>Le nommage des class :
 
 On peut nomme une class avec le nom que l'on veux, il suffis de l'écrire dans un attribut `class=" "` d'une balise.
 
@@ -191,7 +241,11 @@ Lorsque l'on reproduis cette structure, alors tous les elements seront modifié 
 
 ---
 
-### c. Les Id
+<a name="id"/>
+### c. <u>Les Id
+
+<a name='def'/>
+#### 1. Definition
 
 Une `Id` est un attribut qui permet d'identifier precisement un element dans la page html. Il se note comme suis :
 
@@ -202,17 +256,20 @@ Une `Id` est un attribut qui permet d'identifier precisement un element dans la 
 
 ```
 
-
-Pourquoi utiliser une id quand on à une class ?
+<a name="vs"/>
+#### 2. Id vs Class
 
 Veritable carte d'identité de la balise, l'Id est unique dans la page html. C'est à dire qu'elle ne pourras servir que pour une seul balise html. On l'utilise pour cibler un ensemble ou une balise en particulier.
+
+<a name="html"/>
+##### 3. Ecrire une Id en Html
 
 Exemple avec la création d'un logo composé d'une image et d'un element html :
 
 ```html
 
 <div id='logo'>
-  <img src="" alt="">
+  <img src="img/logo.jpg" alt="logo">
   <div></div>
 </div>
 
@@ -221,6 +278,11 @@ Exemple avec la création d'un logo composé d'une image et d'un element html :
 Une fois que le logo sera créé, on pourras le manipuler dans son ensemble en utlisant l'Id. On l'identifie en CSS par le caracter `#`
 
 > Une `id` ainsi appliqué, nous permet de manipuler avec un seul terme l'ensemble des elements qui se trouvent à l'interieur de la balise `div` portant l'id
+
+---
+
+<a name="use"/>
+##### 3. Utiliser une Id en Css
 
 En css on pourrait donc proceder ainsi :
 
@@ -247,7 +309,8 @@ Ainsi préparé l'element portant l'id `#logo` peut être manipulable dans son e
 
 ---
 
-### Combiner Id et class
+<a name="comb"/>
+### d. <u>Combiner Id et class
 
 Dans la majorités des cas, on peux ne travailler qu'en class. Seuelement parfaois, il est necessaire d'avoir accés à un element precisement, indépendemment des autres. L'id va nous aider dans ce sens.
 
@@ -270,6 +333,7 @@ Illustrons le propos avec la fable du vilain petit canard. Les elements poussin 
 
 ---
 
+<a name="add"/>
 ### ajouter plusieurs class à une même balise
 
 
@@ -285,3 +349,87 @@ Illustrons le propos avec la fable du vilain petit canard. Les elements poussin 
 </ul>
 
 ```
+
+---
+
+<a name="quel"/>
+### III. Quelques Selecteurs
+
+Il existe une grande variétée de selecteurs Css qui nous permettent de modifier les propriétés d'un element.
+
+On peux influer sur sa couleur, sa tailler ou le type de texte. Chaque selecteur modifie une propriété particuliere d'un lement.
+
+En premier regardons les selecteurs de positionnement ui vont vous permettres d'agencer les elements entres eux.
+
+---
+
+<a name="posi"/>
+#### a. <u>Le positionnement
+
+<a name="float"/>
+##### 1. *Float*
+
+```css
+img{
+  float:left;
+}
+
+.menu{
+  float: right;
+}
+
+```
+
+>Le float permet de mettre un element en habillage de texte. Le texte viens *épouser* sa forme.
+
+<a name="display"/>
+##### 2. *display*
+
+<a name="bloc"/>
+###### i. **block**
+
+```css
+#block-00{
+  display:block;
+  margin:auto;
+}
+```
+Display prend toute la ligne.
+
+Si l'element a une taille limité, **une marge** comble ce qu'il reste de place.
+
+>Cette propriété combiné à un `margin:auto;` centre l'element automatiquement au centre de la page, quelque soit sa largeur.
+
+
+<a name="inline"/>
+###### ii. **inline**
+
+```css
+#block-01{
+  display:inline;
+}
+```
+
+> La propriété `inline` met les elements les uns à la suite des autres pour peux qu'ils aient une largeur qui combiné fait moins que 100% de la page.
+
+<a name="Ibloc"/>
+###### iii. **inline-bloc**
+
+```css
+#block-02{
+  display:inline-block;
+}
+
+```
+
+>La propriété `inline-block` met les elements les uns à la suite des autres et forment un bloque, qui chasse les autres.
+
+
+<a name="position"/>
+##### 2. *position*
+
+<a name="relative"/>
+###### i. **relative**
+
+<a name="absolute"/>
+###### ii. **absolute**
