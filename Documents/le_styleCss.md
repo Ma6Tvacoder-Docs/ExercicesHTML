@@ -6,47 +6,46 @@ Appelé feuille de style en cascade, elle permet la mise en forme des pages **Ht
 
 ---
 
+> Si vous lisez ce texte dans un IDE, utilisez la commande Ctrl + F + *l'objet de votre recherche* pour naviguer dans la documenr
+
 ### [**I. Ecrire du style `CSS`**](#ecrire)
 
-1. ##### [En attribut](#att)
-* ##### [Dans une balise `<style>`](#balise)
-* ##### [Dans une feuiller de style `CSS`](#style)
+1. [En attribut](#att)
+* [Dans une balise `<style>`](#balise)
+* [Dans une feuiller de style `CSS`](#style)
 
 ### [**II. Comment ça marche ?**](#comment)
 
 
 #### [a. <u>Cibler un element](#target)
-1. ##### [Les balises](#balise)
-2. ##### [Un chemin de selection](#path)
+1. [Les balises](#balise)
+2. [Un chemin de selection](#path)
 
 #### [b. <u>Les class](#class)
 
-1. ##### [Le nommage des class](#nommage)
-* ##### [creer une structure de donnée](#classStructure)
+1. [Le nommage des class](#nommage)
+* [creer une structure de donnée](#classStructure)
 
 #### [c. <u>Les Id](#id)
-1. ##### [Definition](#def)
-2. ##### [ID vs Class](#vs)
-3. ##### [Ecrire une Id en Html](#html)
-4. ##### [Utiliser une Id en Css](#use)
+1. [Definition](#def)
+2. [ID vs Class](#vs)
+3. [Ecrire une Id en Html](#html)
+4. [Utiliser une Id en Css](#use)
 
-#### [Combiner Id et class](#comb)
-#### [Ajouter plusieurs class](#add)
+##### [d. <u>Combiner Id et class](#comb)
+##### [e. <u>Ajouter plusieurs class](#add)
 
 ### [**III. Quelques selecteurs**](#quel)
 #### [a. <u>Le positionnement](#posi)
-##### [1. *Float*](#float)
-##### [2. *display*](#display)
-
-
-* ###### [i. *block*](#bloc)
-* ###### [ii. *inline*](#inline)
-* ###### [iii. *inline-block*](#Ibloc)
-
-
-##### [3. *position*](#position)
-
-* ###### [i. *relative*](#relative)
+1. [**Float**](#float)
+* [**display**](#display)
+###### [*-- block*](#bloc)
+###### [*-- inline*](#inline)
+###### [*-- inline-block*](#Ibloc)
+*  [**position**](#position)
+###### [*-- relative*](#relative)
+###### [*-- absolute*](#absolute)
+###### [*-- fixe*](#fixe)
 
 
 
@@ -431,5 +430,63 @@ Si l'element a une taille limité, **une marge** comble ce qu'il reste de place.
 <a name="relative"/>
 ###### i. **relative**
 
+L'objet garde sa position initiale dans le flux, mais
+le rendu peut être déplacé.
+
+```css
+
+img{
+  position: relative;
+  right:10px;
+  bottom: 10px;
+}
+
+```
+
+> Toute les images se déplacerons de `10` pixels vers le haut et de `10` vers la gauche, **et le reste n'en sera pas perturbé.**
+
+
 <a name="absolute"/>
 ###### ii. **absolute**
+
+L'objet perd sa position dans le flux s'en tient au dernier objet dans la hierarchie html avant lui par defaut. ** Trés utile lorsque l'on veux superposer deux elements l'un sur l'autre.**
+
+L'objet est alors positionnable par rapport à l'objet `Window`, *votre fenêtre de navigateur*. Vous pouvez par defaut placer votre objet par rapport à la fenêtre de votre écran. *Trés utile pour le responsive.*
+
+> On peux *encapsuler* un objet html en position absolute si le parent est lui même en `position:relative;` L'objet est alors relatif au redner contexte en `position: relative;`.
+
+```css
+.logo{
+  position: relative;
+  }
+  img{
+    position: absolute;
+    right:10px;
+    bottom: 10px;
+  }
+
+```
+
+L'objet image est placé par rapport à l'objet `.logo` et peut alors former un tout.
+
+###### Important !
+
+
+Si vous souhaitez placer un objet par rapport au body, *c'est à dire pouvoir le placer en `bottom:10px;`* peut importe la tailler de la page. *Il faut meetre la balise body en `position:relative;`*
+
+<a name="fixe"/>
+###### ii. **fixe**
+
+L'objet Est placé en fonction du referentiel hauteur largeur et aura la position `fixe` la ou vous le mettrez. **Il n ebougera pas lors du scroll**.
+
+```css
+
+img{
+  position: fixe;
+  right:250px;
+  top: 150px;
+}
+
+```
+
+> Utile pour positionner une nav toujours affiché à l'écran.
