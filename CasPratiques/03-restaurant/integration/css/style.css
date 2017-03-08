@@ -1,0 +1,49 @@
+/* ---- header ---- */
+
+/* 1. Mettre Nav en position absolute
+   2. Ajouter la propriété bottom:50px; sur nav
+   3. Ajouter les propriété position:relative sur header;
+   4. enlever position relative header et ajouter sur body
+*/
+.inlineB{
+  display: inline-block;
+}
+header{
+  position: relative;
+}
+nav{
+  position: absolute;
+  right: 25px;
+}
+#logo{
+  width: 200px;
+  margin:auto;
+  position: relative;
+}
+#logo div{
+	width: 0;
+	height: 0;
+	border-top: 150px solid #E53F6F;
+	border-left: 150px solid transparent;
+}
+#logo img{
+  top: -27px;
+  position: absolute;
+  width: 100%;
+}
+/* ---------- */
+/*.roundBox{
+  overflow: hidden;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}*/
+.blocTxt{
+
+}
+.blocImg{
+  width: 70%;
+}
+#story .blocImg{
+  width: 45%;
+}

@@ -1,0 +1,21 @@
+/* Comportements boutons */
+.grid{
+  background-color:#E53935;
+}
+.grid div{
+  background-color: blue;
+  height: 80vh;
+}
+
+.squarre div{
+  height:80px;
+  width: 80px;
+  margin:10px;
+  /*background-color: blue;*/
+}
+#content{
+
+}
+#boutons{
+  padding: 20px 0;
+}
