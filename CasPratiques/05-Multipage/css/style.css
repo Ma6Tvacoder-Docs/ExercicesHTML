@@ -1,0 +1,12 @@
+h1{
+  font-family: cursive;
+  color:cyan;
+  letter-spacing:10px;
+}
+.rouge{
+  letter-spacing:1px;
+  color: red;
+}
+#letter{
+  letter-spacing:10px;
+}
