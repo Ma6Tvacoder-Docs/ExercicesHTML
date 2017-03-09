@@ -1,14 +1,17 @@
 <!DOCTYPE html>
- <?php
-  include('inc/header.php');
- ?>
-
- <!-- <html> -->
-  <!-- <head>
-    <link rel="stylesheet" href="css\style.css">
+<html>
+  <head>
     <meta charset="utf-8">
-    <title>Petra'struck</title>
-  </head> -->
+    <link rel="stylesheet" href="css/style-Nabila.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Food truck</title>
+  </head>
+  <body>
+
+   <?php
+    include('inc/header.php');
+   ?>
+
   <body>
     <header>
       <section>
