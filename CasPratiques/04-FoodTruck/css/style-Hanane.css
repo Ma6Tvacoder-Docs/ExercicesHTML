@@ -1,0 +1,30 @@
+
+body{
+  background-color:#950000;
+  /*background-color:cyan;*/
+  color: white;
+}
+p{
+  color:white;
+  text-align: justify;
+}
+{
+  margin: auto;
+  padding: 20px;
+
+}
+#li{
+  display:inline;
+  margin:20px;
+  font-size:30px; strong;
+  font-family:cursive;
+  color:white;
+}
+h1{
+  color:white;
+  text-align:center;
+}
+text-color{
+ white;
+
+}

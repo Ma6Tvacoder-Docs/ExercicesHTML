@@ -1,0 +1,33 @@
+#tufaischier{
+  padding-left:300px;
+}
+#toiaussi{
+  padding-left: 650px;
+}
+header{
+  background-color: #e70012
+}
+header  div img{
+  padding-left: 530px;
+}
+body{
+background-color: #e70012
+}
+article{
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+h1{
+  font-size: 30px;
+}
+h2{
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+p{
+  font-weight: bold;
+  font-size: 15px;
+}
+footer{
+  background-color: #e70012
+}
