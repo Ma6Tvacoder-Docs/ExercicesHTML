@@ -1,0 +1,8 @@
+img{
+  width: 150%;
+}
+.photo{
+  width: 707px;
+  height: 707px;
+  overflow: hidden;
+}
