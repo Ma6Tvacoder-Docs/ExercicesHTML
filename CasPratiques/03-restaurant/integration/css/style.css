@@ -1,5 +1,5 @@
 /* ---- header ---- */
-
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
 /* 1. Mettre Nav en position absolute
    2. Ajouter la propriété bottom:50px; sur nav
    3. Ajouter les propriété position:relative sur header;
@@ -10,6 +10,7 @@
 }
 header{
   position: relative;
+  background-image: url('../img/woddPlank.jpg');
 }
 nav{
   position: absolute;
@@ -19,6 +20,8 @@ nav{
   width: 200px;
   margin:auto;
   position: relative;
+  margin-top: 250px;
+  padding-bottom: 250px;
 }
 #logo div{
 	width: 0;
@@ -31,19 +34,96 @@ nav{
   position: absolute;
   width: 100%;
 }
+h1{
+  font-family: 'Caveat Brush', cursive;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+h1 span{
+  font-size: 40px;
+  display: inline;
+  vertical-align: top;
+  position: relative;
+}
+h1 span:after{
+  top: 15px;
+  content: "-";
+  position: absolute;
+  left: 0;
+}
+#logoResto{
+  position: relative;
+  display: inline-block;
+  margin-left: 80px;
+}
+.rectangle{
+  bottom: 12px;
+  position: absolute;
+  margin: 0;
+  display: block;
+  border: 7px solid #E53F6F;
+  padding: 0 17px;
+  width: 0px;
+  left: 26%;
+}
 /* ---------- */
-/*.roundBox{
-  overflow: hidden;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-}*/
-.blocTxt{
 
+section img{
+  width: 100%;
 }
-.blocImg{
-  width: 70%;
+section > section{
+  overflow: hidden;
+  height: 820px;
+  text-align: center;
 }
-#story .blocImg{
-  width: 45%;
+section p, section h2{
+  padding: 0 15%;
 }
+.pBloque-left, .pBloque-right{
+  display: inline-block;
+  vertical-align: middle;
+  /*height: 820px;*/
+  overflow: hidden;
+}
+.pBloque-left{
+  width: 40%;
+}
+.pBloque-right{
+  width: 60%;
+}
+#story img{
+  transform: scaleX(-1);
+  width: 125%;
+}
+#soap .pBloque-left{
+    width: 30%;
+}
+#soap .pBloque-right{
+    width: 70%;
+}
+#soap{
+  height: 900px;
+}
+/*#soap .pBloque-left{
+  width: 83%;
+}
+#soap .pBloque-right{
+  width: 17%;
+}*/
+#story div{
+  transform: scaleX(-1);
+  height: 100%;
+  background-image: url('../img/asperge.jpg');
+  background-size: cover;
+}
+/*p{
+  position: relative;
+}
+p:before{
+  font-size: 200px;
+  content:"-->";
+  color: red;
+  /*position: absolute;*/
+  /*height: 15px;
+  width: 15px;
+}*/
