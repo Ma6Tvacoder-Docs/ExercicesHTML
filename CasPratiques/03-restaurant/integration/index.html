@@ -3,17 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Restaurant</title>
+    <link rel="stylesheet" href="elements/font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
-      <h1 class="inlineB">Ce soir</h1>
+      <div class="logoResto">
+        <h1 class="inlineB">C<span>e</span> soir</h1>
+        <hr class="rectRose">
+      </div>
       <nav class="inlineB">
         <ul>
-          <li class="inlineB">Our story</li>
-          <li class="inlineB">Fare</li>
-          <li class="inlineB">Drink</li>
-          <li class="inlineB">Contact</li>
+          <li class="inlineB"><a href="#story">Our story</a></li>
+          <li class="inlineB"><a href="#soap">Fare</a></li>
+          <li class="inlineB"><a href="#Drink">Drink</a></li>
+          <li class="inlineB"><a href="#Contact">Contact</a></li>
         </ul>
       </nav>
       <div id="logo">
@@ -24,14 +28,63 @@
     </header>
     <section>
       <section id="story">
-        <article class="">
-          <h2></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </article>
-        <div class="">
-          <img src="img/asperge.jpg" alt="">
+        <article class="pBloque-left">
+          <h2>Our Story</h2>
+          <hr class="rectRose">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class=txtRose>Est.2004</p>
+        </article><!--
+        --><div class="pBloque-right">
+          <!-- <img src="img/asperge.jpg" alt=""> -->
         </div>
       </section>
+      <section id="soap">
+        <div class="pBloque-right">
+          <img src="img/soap.jpg" alt="">
+        </div><!--
+        --><article class="pBloque-left">
+        <img src="img/G1.jpg" alt="">
+          <h2>Fresh Fare</h2>
+          <hr class="rectRose">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class=txtRose>all natural</p>
+        </article>
+      </section>
+      <section id="local">
+        <article class="pBloque-left">
+          <img src="img/G2.jpg" alt="">
+          <h2>Local Distillation</h2>
+          <hr class="rectRose">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="txtRose">craft liquor</p>
+        </article><!--
+        --><div class="pBloque-right">
+          <img src="img/moule.jpg" alt="">
+        </div>
+      </section>
+      <section id='eggs'>
+        <img src="img/eggs.jpg" alt="">
+      </section>
     </section>
+    <footer>
+      <div>
+        <div class="logoResto">
+          <h1 class="inlineB">C<span>e</span> soir</h1>
+          <hr class="rectRose">
+        </div>
+        <p>Lorem ipsum dolor sit amet</br>
+        Lorem ipsum dolor sit amet</p>
+        <p>+3360000000</br>
+        +3360000000</p>
+      </div><!--
+   --><div id='social'>
+        <ul>
+          <li><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
+          <li><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
+          <li><i class="fa fa-google fa-2x" aria-hidden="true"></i></li>
+          <li><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

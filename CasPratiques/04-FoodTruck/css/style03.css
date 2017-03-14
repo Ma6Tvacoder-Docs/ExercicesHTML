@@ -1,0 +1,30 @@
+body {
+  background-color: #EC9C76;
+  background-size: cover;
+  font-family: 'Lemonada', cursive;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+}
+body img{
+  width: 300px;
+  height: 200px;
+}
+nav{
+  position: absolute;
+  right: 25px;
+}
+nav li{
+  display: inline-block;
+}
+#mmm{
+  display: inline-block;
+}
+#mmm img{
+ width: 270px;
+ height: 270px;
+
+}
+#mmm div{
+  display: inline-block;
+}
