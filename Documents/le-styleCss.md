@@ -1,5 +1,4 @@
 La feuille de style css
-La feuille de style css
 ---
 
 Appelé feuille de style en cascade, elle permet la mise en forme des pages **Html**.
@@ -477,7 +476,7 @@ Si vous souhaitez placer un objet par rapport au body, *c'est à dire pouvoir le
 <a name="fixe"/>
 ###### ii. **fixe**
 
-L'objet Est placé en fonction du referentiel hauteur largeur et aura la position `fixe` la ou vous le mettrez. **Il n ebougera pas lors du scroll**.
+L'objet Est placé en fonction du referentiel hauteur largeur et aura la position `fixe` la ou vous le mettrez. **Il ne bougera pas lors du scroll**.
 
 ```css
 
